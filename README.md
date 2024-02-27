@@ -41,6 +41,7 @@ To run a simulation:
 <img width="598" alt="1" src="https://github.com/talshva/DDLS_Final_Project/assets/82408347/38406510-c77d-46bf-8f84-bdb4381651e6">
 
 3. Open the matmul_pkg file (via HDL Designer or directly using notepad), and adjust the parameters, based on the values you used to generate the test cases.
+Don't forget to adjust the project path as well.
 * Optional: set VERBOSE flag to '1' to display detailed simulation logs.
 <img width="403" alt="3" src="https://github.com/talshva/DDLS_Final_Project/assets/82408347/3b973dda-3e86-455a-ad92-7e0045d0eb5d">
 
