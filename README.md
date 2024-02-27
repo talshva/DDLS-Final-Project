@@ -54,9 +54,9 @@ If using HDL Designer, select matmul_tb and press "Simulation" icon:
 
 * Alternatively, you can add the arg `-coverage` to the simulation args.
 
-6. Run the simulation by typing run -all in the QuestaSim terminal, and review the simulation results to verify the correctness of the matrix multiplication:
+6. Run the simulation by typing `run -all` in the QuestaSim terminal, and review the simulation results to verify the correctness of the matrix multiplication:
  <img width="362" alt="6" src="https://github.com/talshva/DDLS_Final_Project/assets/82408347/45642ea0-0d66-49f9-b7f0-ffbae4cbcb0e">
 
-7. For additional analyse, open the Coverage Report to see all simulation covered data:
+7. For additional analysis, open the Coverage Report to see all simulation covered data:
 <img width="134" alt="7" src="https://github.com/talshva/DDLS_Final_Project/assets/82408347/1786ecf2-64c8-49ba-91de-4b48f4073e6a">
 
