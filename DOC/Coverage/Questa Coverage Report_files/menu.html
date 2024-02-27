@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0091)file:///C:/HDS/Project1_verilog/Project1_verilog_lib/questasim/work/covhtmlreport/menu.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title> </title>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--  JavaScript Libs -->
+    <!-- <script type="text/javascript" src="vendor/es5-shim-v4.5.9/es5-shim.min.js"></script> -->
+    <script type="text/javascript" src="./jquery.min.js.download"></script>
+    <script type="text/javascript" src="./bootstrap.min.js.download"></script>
+    <script type="text/javascript" src="./ag-grid.min.noStyle.js.download"></script>
+    <script type="text/javascript" src="./jstree.min.js.download"></script>
+
+    <script type="text/javascript" src="./global.js.download"></script>
+
+    <script type="text/javascript" src="./routing.js.download"></script>
+    <script type="text/javascript" src="./utils.js.download"></script>
+
+    <script type="text/javascript" src="./menu.js.download"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="./bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./ag-grid.css">
+    <link rel="stylesheet" type="text/css" href="./ag-grid-theme.css">
+    <link rel="stylesheet" type="text/css" href="./font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./style.min.css">
+
+    <link rel="stylesheet" type="text/css" href="./style.css">
+<script type="text/javascript" src="./instlink.js.download"></script><script type="text/javascript" src="./overalldu.js.download"></script></head>
+
+<body style="background: white;" marginwidth="1" marginheight="1">
+
+    <div class="card card-tabs">
+        <ul class="nav nav-tabs nav-justified" role="tablist" id="menu-tabs">
+            <li role="presentation" id="instancesTab" class="active">
+                <button id="instances-tab" onclick="viewTab(&#39;#instances&#39;)" role="tab" aria-controls="instances" data-toggle="tab" aria-expanded="true">
+                    <i class="fa fa-sitemap" aria-hidden="true"></i>
+                    <span class="menu-title-text">Instances</span>
+                </button>
+            </li>
+            <li role="presentation" id="designUnitsTab">
+                <button id="design-units-tab" onclick="viewTab(&#39;#design-units&#39;)" role="tab" aria-controls="design-units" data-toggle="tab">
+                    <i class="fa fa-th" aria-hidden="true"></i>
+                    <span class="menu-title-text">Design Units</span>
+                </button>
+            </li>
+
+        </ul>
+        <div class="tab-content" style="display: inherit;">
+            <div id="instances" role="tabpanel" class="tab-pane " style="display: block;">
+                <div class="menu-container">
+                        <div class="menu-toolbar pull-right btn-group grid-group-btn" style="margin-right: 0px;margin-top: 9px;">
+                                <button id="collapseTree" type="button" title="Collapse All" class="btn btn-questa btn-default dropdown-toggle">
+                                    <img src="./collapse-all.png" alt="Collapse All" height="14" width="14">
+                                </button>
+                            </div>
+                            <div class="menu-toolbar pull-right btn-group grid-group-btn" style="margin-right: 10px;margin-top: 9px;">
+                                    <i id="menuspin" class="fa fa-spinner fa-spin" style="position: absolute;margin-left: 22px;display: none;font-size: 15px;color: #2b6da5 !important;z-index: 30;"></i>
+                                <button id="expandTree" type="button" title="Expand All" class="btn btn-questa btn-default dropdown-toggle">
+                                    <img src="./expand-all.png" alt="Expand All" height="14" width="14">
+                                </button>
+                            </div>
+                    <button type="button" id="instances-menu-search-btn" class="btn btn-primary pull-right menu-filter disabled" disabled="" onclick="filterMenu()" style="margin-right: 10px;">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                    <div style="overflow: hidden; padding-right: .5em;">
+                        <input type="search" id="instances-menu-search" value="" class="input menu-input" style="width: 100%;" placeholder="Search..." onsearch="filterMenu()" oninput="enableSearchBtn(this.id)">
+                        <!-- <button class="close-icon" onclick="clearInput('instances-menu-search')"></button> -->
+                    </div>
+                    <div id="instances-menu" class="jstree jstree-1 jstree-default" role="tree" tabindex="0" aria-activedescendant="15" aria-busy="false"><ul class="jstree-container-ul jstree-children jstree-no-dots" role="group"><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="15_anchor" aria-expanded="false" id="15" class="jstree-node  jstree-closed jstree-last"><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="file:///C:/HDS/Project1_verilog/Project1_verilog_lib/questasim/work/covhtmlreport/summary.html?f=1&amp;s=15&amp;type=inst" tabindex="-1" style="font-size:small" id="15_anchor"><i class="jstree-icon jstree-themeicon fa fa-square icon-color-success jstree-themeicon-custom" role="presentation"></i>matmul_tb (<span style="color: #02cc1d;font-weight: bold;">97.19%</span>)</a></li></ul></div>
+                </div>
+            </div>
+            <div id="design-units" role="tabpanel" class="tab-pane" style="display: none;">
+                <div class="menu-container">
+                    <button type="button" id="design-units-menu-search-btn" class="btn btn-primary pull-right menu-filter disabled" disabled="" onclick="filterMenu()">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                    <div style="overflow: hidden; padding-right: .5em;">
+                        <input type="search" id="design-units-menu-search" value="" class="input menu-input" style="width: 100%;" placeholder="Search..." onsearch="filterMenu()" oninput="enableSearchBtn(this.id)">
+                    </div>
+                    <div id="design-units-menu"> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body></html>
