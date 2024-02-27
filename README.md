@@ -45,11 +45,11 @@ To run a simulation:
 <img width="403" alt="3" src="https://github.com/talshva/DDLS_Final_Project/assets/82408347/3b973dda-3e86-455a-ad92-7e0045d0eb5d">
 
 4. Compile the Verilog and SystemVerilog files with your simulation tool, and execute the simulation using the `matmul_tb.sv` testbench.
+If using HDL Designer, select matmul_tb and press "Simulation" icon:
 
-If using HDL Designer, select matmul_tb and press "Simulation" icon: 
 <img width="141" alt="4" src="https://github.com/talshva/DDLS_Final_Project/assets/82408347/821ad919-6f93-43d1-9b47-4b4654f9cf6f">
 
-5. On the pop-up window, enter the simulation args: `-voptargs=+acc`, and make sure to enable Code Covarage:
+6. On the pop-up window, enter the simulation args: `-voptargs=+acc`, and make sure to enable Code Covarage:
 <img width="176" alt="5" src="https://github.com/talshva/DDLS_Final_Project/assets/82408347/a14273c4-2b4d-4d8f-86b1-b1e9fa240d36">
 
 * Alternatively, you can add the arg `-coverage` to the simulation args.
