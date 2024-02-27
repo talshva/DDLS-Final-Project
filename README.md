@@ -1,11 +1,3 @@
-I have accessed the contents of the `.sv` (SystemVerilog) files for your project. I will now review these files to understand their functionality and structure further. This review will enhance the README file by incorporating details about the SystemVerilog components, their role in the project, and how they integrate with the Verilog components previously analyzed.
-
-Next, I'll incorporate the information from these files into the README draft, ensuring to highlight the significance of each SystemVerilog file in the context of your Systolic Array Processor Matrix Multiplication project. Let's proceed with the detailed analysis and completion of the README.
-
-After reviewing the `.sv` (SystemVerilog) files, I'll integrate their descriptions into the README draft to provide a comprehensive overview of your Systolic Array Processor Matrix Multiplication project. This updated README will include details about both the Verilog and SystemVerilog components of your project, emphasizing their functionalities and how they contribute to achieving efficient matrix multiplication.
-
----
-
 # Systolic Array Processor for Matrix Multiplication
 
 ## Project Overview
