@@ -25,13 +25,21 @@ The project comprises several Verilog and SystemVerilog files, each serving a un
 - `matmul_checker.sv`: Verifies the output of the matrix multiplication against the golden model.
 - `matmul_coverage.sv`: Implements coverage models to ensure thorough testing.
 
-## Installation
-To utilize this project, clone the repository and ensure you have a Verilog/SystemVerilog simulation environment (QuestaSim/ModelSim, and HDL Designer) installed on your machine.
+## Installation and prerequisites
+- To utilize this project, firstly clone the repository and ensure you have a Verilog/SystemVerilog simulation environment (QuestaSim/ModelSim, and HDL Designer) installed on your machine.
+- After creating a project enviroment, copy all .v and .sv files to "hdl" project directory.
+- Copy GM folder to "hdl" project directory.
 
 ## Usage
 To run a simulation:
-1. Navigate to the project directory.
-2. Compile the Verilog and SystemVerilog files with your simulation tool.
+1. Navigate to GM folder inside project directory:
+<img width="390" alt="0" src="https://github.com/talshva/DDLS_Final_Project/assets/82408347/baeee18f-19b0-47b6-8818-d1e6e15b01a6">
+2. 
+- Run the batch file RUN_SINGLE to generate variety of test cases, using a single pre-defined set of parameters (BUS_WIDTH, DATA_WIDTH, ADDRESS_WIDTH, SPN_SELECT).
+- Another option is to run the RUN_ALL .bat file to generate all possible parameters combinations (may takes long time, depends on the generation amount):
+<img width="598" alt="1" src="https://github.com/talshva/DDLS_Final_Project/assets/82408347/38406510-c77d-46bf-8f84-bdb4381651e6">
+
+3. Compile the Verilog and SystemVerilog files with your simulation tool.
 3. Execute the simulation using the `matmul_tb.sv` testbench.
 4. Review the simulation results to verify the correctness of the matrix multiplication.
 
